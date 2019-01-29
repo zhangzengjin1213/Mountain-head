@@ -1,0 +1,190 @@
+body,h1,h2,h3,h4,h5,h6,ul,li,p,a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration:none;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: FZLTXHJW--GB1-0;
+}
+input {
+    border: none;
+    outline: none;
+}
+img {
+    width: 100% ;
+    height: 100%;
+}
+p {
+    font-size: 28px;
+    line-height: 30px;
+}
+body {
+    background-color: #eee;
+}
+.temp {
+    padding-top: 1.173333rem;
+    height: 100%;
+    padding-bottom: 1.173333rem;
+}
+
+/* 浮动 */
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/* 清除浮动 */
+.clearfix:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+}
+.clearfix{
+    zoom:1
+}
+/* 显示 */
+.show {
+    display: block;
+}
+/* 隐藏 */
+.hide {
+    display: none;
+}
+/* 标题字体 */
+/* 九宫格 */
+.kogyagiSize {
+    font-size: 22px !important;
+    color: #444 !important;
+}
+
+.titleSize {
+    font-size: 40px;
+}
+.bigSize {
+    font-size: 60px;
+}
+/* 价格小字体 */
+.priceSmallSize {
+    font-size: 30px;
+}
+/* 钱前面符号的大小 */
+.moneySymbolSize {
+    font-size: 40px;
+}
+/* 价格大字体 */
+.priceBigSize {
+    font-size: 78px;
+}
+.fontSize {
+    font-size: 20px;
+}
+.smallSize {
+    font-size: 18px;
+}
+.fontFirstSize {
+    font-size: 35px;
+}
+/* 描述文字大小 */
+.decSize {
+    font-size: 22px;
+}
+/* 商品列表文字 */
+.goodListSize {
+    font-size: 28px;
+}
+.goodSatesSize {
+    font-size: 24px;
+}
+.footerSize{
+    font-size: 32px;
+}
+.goodNormalSize {
+    font-size: 26px;
+}
+.mianzhiSize {
+    font-size: 50px;
+}
+.moneySize {
+    font-size: 38px;
+}
+/* 九宫格 */
+.kogyagiSize {
+    font-size: 20px !important;
+    color: #888 !important;
+}
+/* 首页分类 */
+.goodSize {
+    font-size: 34px;
+}
+/* 主题北背景颜色 */
+.themeColors {
+    background-color: #ff8b1a;
+}
+/* 白色背景 */
+.whiteBGC {
+    background-color: #fff;
+}
+/* 购买颜色 */
+.buyBC {
+    background-color: #fe4500;
+}
+.orangeBGC {
+    background-color: #fc7005;
+}
+.yellowBGC {
+    background-color: #ffdd02;
+}
+.bugingBGC {
+    background-color: #ff8502;
+}
+.fragColor {
+    color: #f5f5f5;
+}
+/* 价格颜色 */
+.superColor {
+    color: #f67f09;
+}
+.priceColor {
+    color: #e22425;
+}
+.priceOtherColor {
+    color: #ff8b1a;
+}
+.orangeColor {
+    color: #fc7005;
+}
+.moneyColor {
+    color: #ff8502;
+}
+.whiteColor {
+    color: #fff;
+}
+.wenziColor {
+    color: #ffcba3;
+}
+/* 商品列表文字颜色 */
+.goodListColor {
+    color: #666;
+}
+/* 九宫格 */
+.goodColor {
+    color: #333;
+}
+/* 文字状态 */
+.goodSatesColor {
+    color: #888;
+}
+.goodDecColor {
+    color: #999;
+}
+.goodNormalColor {
+    color: #555;
+}
+.wenziSaize {
+    color: #444;
+}
+
