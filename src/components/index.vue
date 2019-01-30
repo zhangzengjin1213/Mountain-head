@@ -14,10 +14,10 @@
         dots:'none',
         Img:[
           {
-            photo:require('../assets/背景.png')
+            photo:require('@/assets/背景.png')
           },
           {
-            photo:require('../assets/loging_1.jpg')
+            photo:require('@/assets/loging_1.jpg')
           }
         ]
       }
