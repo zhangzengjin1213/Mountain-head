@@ -29,9 +29,13 @@ const getvotePage = ({schoolnum}) => (axios.post('/votePage', {schoolnum}))
 // 投票
 const vote =({schoolnum})=>(axios.post('/vote',{schoolnum}))
 
+// 提交
+const submit=({school,username,department,phone})=>(axios.post('/createVote',{school,username,department,phone}))
+
 export {
   getDataList,
   getSerchRes,
   getvotePage,
-  vote
+  vote,
+  submit
 }
