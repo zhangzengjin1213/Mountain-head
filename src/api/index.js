@@ -14,13 +14,28 @@ axios.interceptors.response.use(
 // 获取排行
 const getDataList = () => (axios.get('/ranking'));
 
-const getSerchRes = ({searchData}) => {
+// 搜索结果
+const getSerchRes = ({
+  searchData
+}) => {
   return axios.post('/search', {
     school: searchData
   })
 }
 
+// 获取投票页面
+const getvotePage = ({
+  schoolnum
+}) => {
+  return axios.post('/votePage', {
+    schoolnum: schoolnum
+  })
+}
+
+
+
 export {
   getDataList,
-  getSerchRes
+  getSerchRes,
+  getvotePage
 }

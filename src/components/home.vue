@@ -6,7 +6,7 @@
     </div>
     <div class="centent">
       <ul class="clearfix">
-        <li class="list fl" v-for="(item,index) in rankList" @click="goPoll">
+        <li class="list fl" v-for="(item,index) in rankList" @click="goPoll(item.schoolnum)">
           <p class="fragColor name">{{item.school}}</p>
           <img src="../assets/山头-23.png" alt>
           <div class="graphic whiteBGC">
@@ -60,20 +60,27 @@ export default {
         name: 'list',
       })
     },
-    goPoll() {
+    goPoll(schoolnum) {
       this.$router.push({
         name: 'poll',
+        params: {
+          schoolnum
+        }
       })
     }
   },
 }
 </script>
 <style>
+body {
+  background: url(/static/img/背景.a41d959.png);
+  background-size: 100% 100%;
+}
 .Base-map {
   max-width: 100%;
   height: 100%;
-  background: url("../assets/背景.png") no-repeat;
-  background-size: 100% 100%;
+  /* background: url("../assets/背景.png") no-repeat;
+  background-size: 100% 100%; */
 }
 .top {
   width: 90%;
