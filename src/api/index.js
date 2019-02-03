@@ -24,18 +24,14 @@ const getSerchRes = ({
 }
 
 // 获取投票页面
-const getvotePage = ({
-  schoolnum
-}) => {
-  return axios.post('/votePage', {
-    schoolnum: schoolnum
-  })
-}
+const getvotePage = ({schoolnum}) => (axios.post('/votePage', {schoolnum}))
 
-
+// 投票
+const vote =({schoolnum})=>(axios.post('/vote',{schoolnum}))
 
 export {
   getDataList,
   getSerchRes,
-  getvotePage
+  getvotePage,
+  vote
 }

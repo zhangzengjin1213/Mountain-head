@@ -11,18 +11,23 @@
         >********简介说明********</span>
       </div>
     </div>
-    <div class="cast">
-      <img class="election" @click="vote" src="../assets/山头-15.png" alt>
+    <div class="cast" v-if='isSelect'>
+      <img class="election" @click="_vote" src="../assets/山头-15.png" alt>
+    </div>
+
+    <div class='modalTip' v-else>
+      <img class="modalTip-img" src="../assets/tanrs.png" alt>
     </div>
   </div>
 </template>
 <script>
-import { getvotePage } from '@/api/index'
+import { getvotePage,vote } from '@/api/index'
 export default {
   data() {
     return {
       schoolnum: null,
-      infoData: {}
+      infoData: {},
+      isSelect:true
     }
   },
   mounted() {
@@ -42,8 +47,19 @@ export default {
         alert('获取失败，请检查网络连接！')
       }
     },
-    vote(){
-      alert('投票')
+    _vote(){
+      vote({
+        schoolnum: this.schoolnum
+      }).then(res=>{
+        if(res.errCode){
+          this.$Message.success('投票成功')
+          setTimeout(() => {
+            this.isSelect=false;
+          }, 1000);
+        }else{
+          alert('投票失败，请稍后重试!')
+        }
+      })
     }
   },
 }
@@ -97,6 +113,18 @@ export default {
   width: 100%;
   text-align: center;
   margin-top: 100px;
+}
+.modalTip{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.modalTip-img{
+  width: 100%;
+  height: 100%;
 }
 .election {
   width: 800px;
